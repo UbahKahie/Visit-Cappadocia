@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cappadocia,Turkey</title>
+    <style>
+      body {
+        background: #f5ebeb;
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: #bc2525;
+        line-height: 20px;
+        padding: 10px;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      img.picture1 {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      img.picture2 {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+      }
+      button {
+        padding: 20px;
+        color: burlywood;
+        display: block;
+        margin: 0 auto;
+        text-decoration: none;
+        font-size: 16px;
+        background: darkred;
+        transition: all 200ms ease-in-out;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        color: #fff;
+        background-color: brown;
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .learn-more {
+        text-decoration: none;
+        color: #da5151;
+        font-size: 15px;
+        margin: 0 auto;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Visit Cappadocia, Turkey!</h1>
+      <hr />
+      <img
+        class="picture1"
+        src="https://th.bing.com/th/id/OIP.wCLJjd9-RuibFxTbGnLeEwHaEK?w=326&h=183&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+        width="400"
+      />
+      <hr />
+      <p>
+        Sitting at the crossroads of Europe and Asia, Turkey is rich with
+        awe-inspiring culture and heritage. But it’s also home to one of the
+        world’s great natural wonders: Cappadocia. This otherworldly expanse of
+        enormous rock towers, called ‘Fairy Chimneys’, streaked in red and ochre
+        with wind-sculpted crowns, is one of the most surreal landscapes on
+        Earth. But it’s what’s inside them that makes Cappadocia truly special.
+      </p>
+      <img
+        class="picture2"
+        src=" https://th.bing.com/th/id/OIP.Q3ixDh9sZKT4NVGJ3g1YhgHaEK?pid=ImgDet&rs=1"
+        width="400"
+      />
+      <hr />
+
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Cappadocia"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on wikipedia
+      </a>
+      <p>
+        There are gorgeous boutique luxury cave hotels, balloon rides over the
+        valley, and vineyards of sweet local wine. In a country seeped in
+        mystery and myth, Cappadocia may just be the most alluring place of all.
+        <br />
+      </p>
+      <button>Click here to Visit Turkey Now!</button>
+      <div>This page was built by Ubah Kahie</div>
+    </div>
+    <script>
+      function visitButton() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let age = prompt("How old are you?");
+
+        let heading = document.querySelector("h1");
+        if (age < 18) {
+          alert("You have to be 18 + to travel alone");
+        } else {
+          if ((age) => 18) {
+            alert(
+              "Thank you for your interest " +
+                name +
+                "!, We will be in touch via email"
+            );
+          }
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", visitButton);
+    </script>
+  </body>
+</html>
